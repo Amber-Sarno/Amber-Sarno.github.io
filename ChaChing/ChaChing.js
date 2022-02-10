@@ -50,11 +50,22 @@ for (i = 0; i < close.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+list.addEventListener('click', 
+
+    // The function that is executed when 'click' on list ietm. 
+    function(ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+        }
+        // still in the function, try to play the sound from here 
+        document.getElementById('audio').play();
+    }, 
+
+    false // Not play automatically ?
+);
+
+
+//end of copy paste section//
 
 
 
@@ -62,17 +73,23 @@ list.addEventListener('click', function(ev) {
 function playMusic(){
   var music = new Audio('Sounds/become-super-mario.mp3');
   music.play();
-}
-
-function alertBox() {
   alert("You rock!");
 }
 
-var audio = new Audio('Sounds/coin-sound.mp3'); audio.play();
 
-// function playSound() {
-//   var music = new Audio ('Sounds/coin-sound.mp3');
-//   music.play();
+// function alertBox() {
+//   alert("You rock!");
 // }
+
+
+//gold star sound//
+document.getElementById('play').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.getElementById('audio').play();
+});
+
+
+
+
 
  

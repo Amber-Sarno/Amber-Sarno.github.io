@@ -2,48 +2,60 @@
 <html lang="en-US">
 <title>Cha Ching</title>
 <link rel="icon" type="image/x-icon" href="Images/goldStar.png" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="ChaChing.css">
-<div class="topnav">
-    <a class="active" href="Contact.html"></a>
-    <a id="login" href=#login></a>
-    <!-- swap demo with login form <p id="demo"></p> -->
-</div>
 
 <body>
+    <div class="topnav">
+        <a class="active" href="Contact.html"></a>
+        <a id="login" href=#login></a>
+        <!-- swap demo with login form <p id="demo"></p> -->
+    </div>
+    
 
   <div class="flex-container">
         <div id="myDIV" class="header">
-            <div id="start-page">
-                <img src="Images/goldStar.png" alt="gold star" style="width:50px;height:50px;" onclick="document.getElementById('yourAudioTag').play();"></img>
+            <div id="gold-star">
+                <!-- taken temporarily from line 18 ->- onclick="document.getElementById('yourAudioTag').play();" -->
+                <audio id="audio" src="Sounds/coin-sound.mp3"></audio>  
+                <a href="#" id="play"> 
+                    <img src="Images/goldStar.png" alt="gold star" style="width:50px;height:50px;" >
+                </a>
             </div>
         
             <h2 style="margin:5px">To-Do List</h2>
-            <input type="text" id="myInput" placeholder="Title...">
+            <input type="text" id="myInput" placeholder="Add here!...">
             <span onclick="newElement()" class="addBtn">Add</span>
         </div>
         
-        <ul id="myUL">
-            <!-- <li>Punch today in the face!</li>
-            <li class="checked">You got this!</li>
-            <li>Look at the sky!</li> -->
+        <ul id="myUL"> 
+            <audio id="audio" src="Sounds/coin-sound.mp3"></audio>  
+            <a href="#" id="play"></a>
         </ul>
-
+        <div id="done-button-div" > 
+            <!-- <button id="button" onclick="DoneButton()" >Done</button> -->
+            <button style="box-sizing: border-box;" id="done-button" value="sound" onclick="playMusic(), alertBox()">Done</button> 
+        </div>
+        
+    
   </div>
 
-   <div id="done-button" > 
-        <!-- <button id="button" onclick="DoneButton()" >Done</button> -->
-        <button value="sound" onclick="playMusic(), alertBox()">Done</button> 
-    </div>
+
+
+
+    <div class="navbar" id="myNavbar"> 
+        <a href="#home"></a>
+        <a href="#news"></a>
+        <a href="Contact.html"></a>
+        <a href="AboutPage.html"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    
 
 </body>
 
-<div class="navbar" id="myNavbar"> 
-    <a href="#home"></a>
-    <a href="#news"></a>
-    <a href="Contact.html"></a>
-    <a href="AboutPage.html"></a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="ChaChing.js"></script>
