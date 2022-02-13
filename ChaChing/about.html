@@ -18,40 +18,29 @@
   <div class="flex-container">
         <div id="myDIV" class="header">
             <div id="gold-star">
-                <!-- taken temporarily from line 18 ->- onclick="document.getElementById('yourAudioTag').play();" -->
                 <audio id="audio" src="Sounds/coin-sound.mp3"></audio>  
                 <a href="#" id="play"> 
                     <img src="Images/goldStar.png" alt="gold star" style="width:50px;height:50px;" >
                 </a>
+                    <p id="ytLink"> Sounds effects sourced from Youtube's sound effects library, which uses 
+                        <a href="https://orangefreesounds.com/mario-coin-sound/" > this site</a>. No Modifications were made.
+                    </p>
             </div>
-        
-            <h2 style="margin:5px">To-Do List</h2>
-            <input type="text" id="myInput" placeholder="Add here!...">
-            <span onclick="newElement()" class="addBtn">Add</span>
         </div>
         
-        <ul id="myUL"> 
-            <audio id="audio" src="Sounds/coin-sound.mp3"></audio>  
-            <a href="#" id="play"></a>
-        </ul>
-        <div id="done-button-div" > 
-            <!-- <button id="button" onclick="DoneButton()" >Done</button> -->
-            <button style="box-sizing: border-box;" id="done-button" value="sound" onclick="playMusic(), alertBox()">Done</button> 
-        </div>
-        
+        <div id="done-button-div" > See licence here:
+            <a id="licence" href="https://creativecommons.org/licenses/by-nc/4.0/">Licence</a>
+        </div>       
     
   </div>
 
-
-
-
     <div class="navbar" id="myNavbar"> 
-        <a href="about.html">About</a>
-        <a href="#news"></a>
-        <a href="Contact.html"></a>
-        <a href="#about"></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+            <a href="index.html">Home</a>
+            <a href="#news"></a>
+            <a href="Contact.html"></a>
+            <a href="AboutPage.html"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
     
 
 </body>

@@ -17,6 +17,23 @@ body {
     margin-top: 4%;
 }
 
+#ytLink {
+  margin-top: 2%;
+  padding: 10px;
+  width: 100%;
+  background: rgb(130,132,133);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 25px;
+
+}
+
+
 
 /* copied from w3 schools */
 /* Include the padding and border in an element's total width and height */
@@ -125,7 +142,7 @@ body {
   }
   
   /* Style the "Add" button */
-  .addBtn {
+  .addBtn  {
     padding: 10px;
     width: 25%;
     background: rgb(130,132,133);
@@ -140,7 +157,7 @@ body {
     border-radius: 25px;
   }
   
-  .addBtn:hover {
+  .addBtn:hover, #ytLink {
     background-color: #bbb;
   }
 
